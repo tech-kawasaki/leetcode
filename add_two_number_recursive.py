@@ -1,4 +1,5 @@
 # 自己流で汚い
+from typing import Optional
 class ListNode(object):
     def __init__(self, x):
         self.val = x
