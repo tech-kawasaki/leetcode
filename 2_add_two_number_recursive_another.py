@@ -14,10 +14,10 @@ class Solution:
         c = val // 10
         ret = ListNode(val % 10 ) 
         
-        if (l1.next != None or l2.next != None or c != 0):
-            if l1.next == None:
+        if l1.next or l2.next or c:
+            if l1.next:
                 l1.next = ListNode(0)
-            if l2.next == None:
+            if l2.next:
                 l2.next = ListNode(0)
             ret.next = self.addTwoNumbers(l1.next,l2.next,c)
         return ret
