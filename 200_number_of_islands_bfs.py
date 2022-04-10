@@ -2,7 +2,7 @@ from collections import deque
 
 class Solution:
     def numIslands(self, grid: list[list[str]]) -> int:
-        if (grid == None or len(grid) == 0):
+        if not grid:
             return 0
             
         nr = len(grid)
@@ -16,7 +16,7 @@ class Solution:
                     grid[r][c]  = "0"
                     neighbors = deque()
                     neighbors.append(r * nc + c)
-                    while (len(neighbors)):
+                    while (neighbors):
                         id = neighbors.pop()
                         row, col = divmod(id, nc)
                         if row - 1 >= 0 and grid[row-1][col] == "1":
@@ -25,7 +25,7 @@ class Solution:
                         if row + 1 < nr and grid[row+1][col] == "1":
                             neighbors.append((row+1) * nc + col)
                             grid[row+1][col] = "0"
-                        if col -1 >= 0 and grid[row][col-1] == "1":
+                        if col - 1 >= 0 and grid[row][col-1] == "1":
                             neighbors.append(row * nc + col-1)
                             grid[row][col-1] = "0"
                         if col + 1 < nc and grid[row][col+1]=="1":
