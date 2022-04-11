@@ -15,11 +15,11 @@ class Solution:
                     grid[r][c]  = "0"
                     neighbors = deque()
                     neighbors.append((r, c))
-                    while (neighbors):
+                    while neighbors:
                         row, col = neighbors.pop()
                         if row - 1 >= 0 and grid[row-1][col] == "1":
                             neighbors.append((row - 1, col))
-                            grid[row - 1][col] = 0
+                            grid[row - 1][col] = "0"
                         if row + 1 < nr and grid[row+1][col] == "1":
                             neighbors.append((row+1, col))
                             grid[row+1][col] = "0"
