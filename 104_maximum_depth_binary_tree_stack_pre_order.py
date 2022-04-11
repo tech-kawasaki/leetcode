@@ -11,9 +11,9 @@ class Solution:
             stack.append((1, root))
         
         depth = 0
-        while stack != []:
+        while stack:
             current_depth, root = stack.pop()
-            if root is not None:
+            if root:
                 depth = max(depth, current_depth)
                 stack.append((current_depth + 1, root.left))
                 stack.append((current_depth + 1, root.right))
