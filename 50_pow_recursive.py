@@ -1,5 +1,5 @@
 class Solution:
-    def fastPow(self, x: float, n: float) -> float:
+    def fastPow(self, x: float, n: int) -> float:
         if n == 0:
             return 1
         half = self.fastPow(x, n//2)
