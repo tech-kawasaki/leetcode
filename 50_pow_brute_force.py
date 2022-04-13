@@ -1,10 +1,9 @@
 class Solution:
     def myPow(self, x, n):
-        N = n
-        if N < 0:
+        if n < 0:
             x = 1 / x
-            N = -N
+            n = -n
         ans = 1
-        for _ in range(N):
+        for _ in range(n):
             ans = ans * x
         return ans
