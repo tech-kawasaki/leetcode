@@ -5,5 +5,5 @@ class Solution:
             n = -n
         ans = 1
         for _ in range(n):
-            ans = ans * x
+            ans *= x
         return ans
