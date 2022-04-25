@@ -1,0 +1,18 @@
+# leetcode
+- [ ] [**Data Structure**]()
+  - [ ] [Linked List]()
+  - [ ] [Hash Table]()
+  - [ ] [Stack]()
+  - [ ] [Queue]()
+  - [ ] [Tree]()
+  - [ ] [Heap]()
+  - [ ] [Graph]()
+
+- [ ] [**Algorithm**]()
+  - [ ] [Search]()
+  - [ ] [Sort]()
+  - [ ] [Bit Maniplation]()
+  - [ ] [Brute Force]()
+  - [ ] [Dynamic Planning]()
+  - [ ] [Greedy]()
+  - [ ] [Backtracking]()
